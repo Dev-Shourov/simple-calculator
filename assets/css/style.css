@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Mulish:wght@700&family=Poppins:wght@400;500;600&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(18, 26, 31);
+    font-family: 'Montserrat', sans-serif;
+}
+div.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .wrapper{
+    max-width: 400px;
+    width: 90%;
+    background: rgb(39, 55, 59);
+    border-radius: 9px;
+    overflow: hidden;
+}
+.wrapper .display{
+    background: rgb(255, 255, 255);
+    height: 100px;
+    width: 90%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+.display .display-1{
+    font-size: 24px;
+    opacity: 0.4;
+}
+.display .display-temp{
+    font-size: 24px;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+.wrapper .all-btn{
+    color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+.all-btn .button{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid rgba(92, 92, 92, 0.197);
+}
+.button:hover{
+    background: rgb(30, 43, 46);
+}
+.btn-0{
+    grid-column: 1/3;
+}
+
